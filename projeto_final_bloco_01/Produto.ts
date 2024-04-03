@@ -82,10 +82,10 @@ public visualizar(): void {
     let tipo: string = "";
     switch (this._tipo) {
         case 1:
-            tipo = "Cafe";
+            tipo = "Bebidas";
             break;
             case 2:
-                tipo = "Lanche";
+                tipo = "Lanches";
                 break;
 
                 default:
