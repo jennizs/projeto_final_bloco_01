@@ -9,7 +9,7 @@ export class ProdutoRepository implements ProdutoRepository {
 
     private listaTodas: Array<Produto> = new Array<Produto>();
     public id: number = 0;
-    tipo: any;
+
 
     ListarPorId(id: number): void {
         let buscaproduto = this.buscarNoArray(id);
@@ -23,7 +23,7 @@ export class ProdutoRepository implements ProdutoRepository {
         let buscaproduto = this.buscarNoArray(produto.id);
 
         if (buscaproduto !== null) {
-            this.listaprodutos[this.listaprodutos.indexOf(buscaproduto)] = produto;
+            this.ListarPorId[this.listarTodosProdutos.indexOf(buscaproduto)] = produto;
             console.log(`A produto id ${produto.id} foi atualizada com sucesso!`);
         } else
             console.log("\nproduto nao foi encontrada!");

@@ -1,12 +1,13 @@
 import { Produto } from "../../projeto_final_bloco_01/Produto";
 
+
 export interface ProdutoRepository {
 
-    ListarPorId (id: number): void;
-    listarTodas(): void;
-    cadastrar(Produto: Produto ): void;
-    atualizar(Produto: Produto): void;
-    deletar(id:number): void;
+    listarTodosProdutos(): void;
+    listarProdutoPorId (id: number): void;
+    cadastrarProduto(Produto: Produto ): void;
+    atualizarProduto(Produto: Produto): void;
+    deletarProduto(id:number): void;
     
    
 }
